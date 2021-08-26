@@ -1,0 +1,15 @@
+[user]
+    name = petervandivier
+    email = peter.vandivier@gmail.com
+[core]
+    excludesFile = ~/.gitignore_global
+[includeIf "gitdir:~/repos/work/"]
+    path = ~/repos/work/.gitconfig
+# https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-config.html#FILES
+[pager]
+    branch = false
+[pull]
+    rebase = false
+# HT @BrettMiller on powershell-community.slack#git
+[init]
+    defaultBranch = trunk

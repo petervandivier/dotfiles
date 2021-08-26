@@ -1,0 +1,8 @@
+/* 
+    https://thoughtbot.com/blog/an-explained-psqlrc
+*/
+\set ON_ERROR_ROLLBACK interactive
+\pset pager off
+\pset null [null]
+\set HISTSIZE 10000
+\set HISTCONTROL ignoredups

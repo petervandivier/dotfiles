@@ -1,0 +1,23 @@
+
+# https://superuser.com/questions/247564/is-there-a-way-for-one-ssh-config-file-to-include-another-one
+Include work.config
+
+# https://stackoverflow.com/questions/44474516/how-to-create-public-and-private-key-with-openssl
+# https://majewsky.wordpress.com/2010/11/29/tip-of-the-day-dont-remember-git-clone-urls/
+# https://coderwall.com/p/vznqwq/shorter-git-urls
+
+Host *
+    ServerAliveInterval 60
+    ServerAliveCountMax 2
+
+# quiesce vagrant and docker sloppiness
+Host 127.1 127.0.1 127.0.0.1 localhost
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    LogLevel QUIET
+
+Host github.com
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/github
+

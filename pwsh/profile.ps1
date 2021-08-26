@@ -2,7 +2,7 @@
 #
 
 if($IsMacOS){
-
+    . $PSScriptRoot/macos.profile.ps1
 }
 
 $Constants = @(

@@ -142,6 +142,7 @@ Install-Module posh-git
 Install-Module dbatools
 Install-Module PSScriptAnalyzer
 Install-Module ImportExcel
+Install-Module powershell-yaml
 
 Import-Module dbatools
 

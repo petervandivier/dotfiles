@@ -1,7 +1,8 @@
 #Requires -RunAs
-# 
-# https://gist.github.com/LitKnd/93d02119cb10cef6992fd1bcddbdc73a
-# 
+<# 
+.LINK
+    https://gist.github.com/LitKnd/93d02119cb10cef6992fd1bcddbdc73a
+#> 
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
@@ -118,6 +119,13 @@ choco install jq --yes
 # https://community.chocolatey.org/packages/PowerBI
 # TODO: (checksum mismatch fail)
 # choco install powerbi --yes
+
+# https://4sysops.com/wiki/how-to-install-the-powershell-active-directory-module/
+# https://www.microsoft.com/en-us/download/details.aspx?id=45520
+#   WindowsTH-RSAT_WS_1803-x64.msu
+#   Update for Windows (KB2693643)
+# https://community.chocolatey.org/packages/RSAT
+# choco install rsat -params '"/AD"' --yes
 
 # https://answers.microsoft.com/en-us/windows/forum/windows_10-start/how-to-enable-numlock-key-in-windows-10/842a33f4-6389-4e2e-939b-a0cca6aff353?page=7
 # https://pscustomobject.github.io/powershell/PowerShell-Export-Registry-Key/

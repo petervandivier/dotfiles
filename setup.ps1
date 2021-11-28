@@ -112,6 +112,9 @@ choco install nordvpn --yes
 # https://community.chocolatey.org/packages/jq
 choco install jq --yes
 
+# https://community.chocolatey.org/packages/azure-cli
+choco install azure-cli --yes
+
 # https://community.chocolatey.org/packages/windbg
 # TODO: (last update 2016 - actively seeking maintainers)
 # choco install windbg --yes -params '"/SymbolPath:D:\Symbols"'
@@ -151,6 +154,12 @@ Install-Module dbatools
 Install-Module PSScriptAnalyzer
 Install-Module ImportExcel
 Install-Module powershell-yaml
+# https://docs.microsoft.com/en-us/powershell/azure/install-az-ps#installation
+Install-Module -Name Az `
+    -Scope CurrentUser `
+    -Repository PSGallery `
+    -Force
+;
 
 Import-Module dbatools
 

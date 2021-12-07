@@ -160,6 +160,9 @@ Install-Module -Name Az `
     -Repository PSGallery `
     -Force
 ;
+# https://docs.microsoft.com/en-us/powershell/power-bi/overview
+# https://github.com/microsoft/powerbi-powershell
+Install-Module -Name MicrosoftPowerBIMgmt
 
 Import-Module dbatools
 

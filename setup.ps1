@@ -169,6 +169,10 @@ Install-Module -Name Az `
 # https://docs.microsoft.com/en-us/powershell/power-bi/overview
 # https://github.com/microsoft/powerbi-powershell
 Install-Module -Name MicrosoftPowerBIMgmt
+Install-Module Pester -Force
+Install-Module PSFramework
+Install-Module SqlCmd2
+Install-Module OMSIngestionAPI
 
 Import-Module dbatools
 

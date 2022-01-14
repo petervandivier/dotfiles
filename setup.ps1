@@ -60,7 +60,7 @@ choco install powershell-core --pre `
 choco install microsoft-windows-terminal --pre --yes
 
 # https://community.chocolatey.org/packages/sql-server-management-studio
-choco install choco install sql-server-management-studio --yes
+choco install sql-server-management-studio --yes
 
 # https://community.chocolatey.org/packages/SqlToolbelt
 choco install sqltoolbelt --params "/products:'SQL Prompt'" --yes

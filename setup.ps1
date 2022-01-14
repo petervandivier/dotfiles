@@ -33,6 +33,9 @@ choco install virtualbox --params "/NoDesktopShortcut" --yes
 # https://community.chocolatey.org/packages/chefdk
 choco install chefdk --yes
 
+# https://community.chocolatey.org/packages/ruby
+choco install ruby --yes
+
 # https://community.chocolatey.org/packages/slack
 choco install slack --yes
 

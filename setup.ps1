@@ -189,3 +189,25 @@ reconfigure;
 "
 Set-Service SQLSERVERAGENT -StartupType AutomaticDelayedStart
 
+Push-Location "${HOME}"
+
+New-Item -Type Directory -Path GitHub
+
+Push-Location GitHub
+
+git clone "git@github.com:petervandivier/dotfiles.git"
+git clone "git@github.com:petervandivier/ssms-toolbox.git"
+
+$SnippetsDefaultsFolder = New-Item -Type Directory -Path "${env:LOCALAPPDATA}/Red Gate/SQL Prompt 10/Snippets.Default"
+Get-ChildItem -Path "${env:LOCALAPPDATA}/Red Gate/SQL Prompt 10/Snippets" -File | ForEach-Object {
+    Move-Item -Path $_ -Destination $SnippetsDefaultsFolder
+}
+Get-ChildItem ./ssms-toolbox/RedGate/10/Snippets -File | ForEach-Object {
+    Copy-Item -Path $_ -Destination "${env:LOCALAPPDATA}/Red Gate/SQL Prompt 10/Snippets"
+}
+Get-ChildItem ./ssms-toolbox/RedGate/10/Styles -File | ForEach-Object {
+    Copy-Item -Path $_ -Destination "${env:LOCALAPPDATA}/Red Gate/SQL Prompt 10/Styles"
+}
+
+Pop-Location
+Pop-Location

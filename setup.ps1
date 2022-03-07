@@ -169,6 +169,7 @@ Install-Module -Name Az `
     -Repository PSGallery `
     -Force
 ;
+Install-Module AzureRM.profile 
 # https://docs.microsoft.com/en-us/powershell/power-bi/overview
 # https://github.com/microsoft/powerbi-powershell
 Install-Module -Name MicrosoftPowerBIMgmt

@@ -84,6 +84,9 @@ choco install vscode-mssql --yes
 choco install sublimetext4 --pre --yes
 # TODO: install powershell ext
 
+# https://community.chocolatey.org/packages/sqlitebrowser
+choco install sqlitebrowser --yes
+
 # https://community.chocolatey.org/packages/obs-studio
 choco install obs-studio --yes
 

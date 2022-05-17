@@ -1,0 +1,18 @@
+# checklist 
+
+before returning a managed device
+
+- logout chrome
+- logout sublimetext
+- logout whatsapp
+- logout slack
+- remove GitHub ssh keys
+  - account
+    - verify push failure
+  - local (just b/c)
+- logout nordvpn
+  - uninstall nordvpn
+- logout discord
+  - uninstall discord
+- logout steam
+  - uninstall steam

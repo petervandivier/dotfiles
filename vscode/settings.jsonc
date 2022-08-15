@@ -1,0 +1,9 @@
+{
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "**/.git": false
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    // https://github.com/OmniSharp/omnisharp-vscode/issues/3003
+    "omnisharp.useGlobalMono": "never"
+}

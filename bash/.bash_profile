@@ -91,8 +91,8 @@ GREEN='\[\e[0;32m\]'
 BLUE='\[\e[1;34m\]'
 DARKBROWN='\[\e[1;33m\]'
 DARKGRAY='\[\e[1;30m\]'
-CUSTOMCOLORMIX='\[\e[1;30m\]'
-DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
+LIGHTGRAY='\[\e[1;30m\]'
+LIGHTGREEN='\[\e[1;32m\]'
 LIGHTBLUE="\[\033[1;36m\]"
 PURPLE='\[\e[1;35m\]' 
 NC='\[\e[0m\]' # No Color
@@ -107,8 +107,7 @@ NC='\[\e[0m\]' # No Color
 #  [[ $branch ]] && echo "[$branch$(parse_git_dirty)]"
 #}
 
-PS1="${LIGHTBLUE}\\D{%Y-%m-%d %T%z} ${BLUE}\u${NC}@${GREEN}\h${NC}:${BOLDYELLOW}\\W ${PURPLE}\$(parse_git_branch)\n${D
-ARKCUSTOMCOLORMIX}$ ${NC}"
+PS1="${LIGHTBLUE}\\D{%Y-%m-%d %T%z} ${BLUE}\u${NC}@${GREEN}\h${NC}:${BOLDYELLOW}\\W ${PURPLE}\$(parse_git_branch)\n${LIGHTGREEN}$ ${NC}"
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

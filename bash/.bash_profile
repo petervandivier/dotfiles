@@ -107,34 +107,13 @@ NC='\[\e[0m\]' # No Color
 #  [[ $branch ]] && echo "[$branch$(parse_git_dirty)]"
 #}
 
-PS1="${LIGHTBLUE}\\D{%Y-%m-%d %T%z} ${BOLDYELLOW}[\\W] ${PURPLE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
-list_detailed_more()
-{
-    ls -lah $1 | more
-}
+PS1="${LIGHTBLUE}\\D{%Y-%m-%d %T%z} ${BLUE}\u${NC}@${GREEN}\h${NC}:${BOLDYELLOW}\\W ${PURPLE}\$(parse_git_branch)\n${D
+ARKCUSTOMCOLORMIX}$ ${NC}"
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-# rm'd "export -f"
 export parse_git_branch
-
-parse_svn_branch() {
-    parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk -F / '{print "(svn::"$1 "/" $2 ")"}'
-}
-export parse_svn_branch
-
-parse_svn_url() {
-    svn info 2>/dev/null | grep -e '^URL*' | sed -e 's#^URL: *\(.*\)#\1#g '
-}
-export parse_svn_url
-
-parse_svn_repository_root() {
-    svn info 2>/dev/null | grep -e '^Repository Root:*' | sed -e 's#^Repository Root: *\(.*\)#\1\/#g '
-}
-export parse_svn_repository_root
 
 # Safe rm procedure
 safe_rm()

@@ -121,6 +121,9 @@ choco install jq --yes
 # https://community.chocolatey.org/packages/azure-cli
 choco install azure-cli --yes
 
+# https://community.chocolatey.org/packages/7zip
+choco install 7zip --yes
+
 # https://community.chocolatey.org/packages/postgresql
 $pw = (New-Guid).Guid -replace '-',''
 choco install postgresql --yes --params "/Password:$pw"

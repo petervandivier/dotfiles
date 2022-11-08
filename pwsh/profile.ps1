@@ -50,6 +50,7 @@ New-Variable -Name 'IsoFmt' -Value $ISODateTimeStringFormat -Option:ReadOnly -Fo
 
 $Aliases = @(
     @{Name='ctcsv'; Value='ConvertTo-Csv'}
+    @{Name='cfcsv'; Value='ConvertFrom-Csv'}
     @{Name='ctj'; Value='ConvertTo-Json'}
     @{Name='cfj'; Value='ConvertFrom-Json'}
 )

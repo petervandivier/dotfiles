@@ -4,7 +4,7 @@ source ~/.bashrc
 # https://natelandau.com/my-mac-osx-bash_profile/
 #PS1="\n[\D{%m%d %T%z} \w]$ "
 export PGDATA=/usr/local/var/postgres
-export GREP_OPTIONS='--color=always' 
+# export GREP_OPTIONS='--color=always' 
 export GOPATH=~/dev/go/
 export PATH=$PATH:/Users/pvandivier/dev/go/bin/
 export BASH_SILENCE_DEPRECATION_WARNING=1

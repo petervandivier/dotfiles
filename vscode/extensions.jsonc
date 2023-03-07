@@ -1,0 +1,8 @@
+{
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+        "rosshamish.kuskus-kusto-syntax-highlighting",
+        "rosshamish.kuskus-kusto-language-server"
+    ]
+}

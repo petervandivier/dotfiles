@@ -13,11 +13,11 @@ $Constants = @(
     },
     @{
         Name = 'UnixEpoch' 
-        Value = ([DateTime]'1970-01-01').ToUniversalTime()
+        Value = [DateTimeOffset]'1970-01-01'
         Option = 'ReadOnly'
         Description = @(
             "Unix Epoch. Aliased to UE. Useful for the .AddSeconds() & .AddMilliseconds() methods "
-            "to convert unix time given to you into a [DateTime] object. "
+            "to convert unix time given to you into a [DateTimeOffset] object. "
         ) -join "`n"
     },
     @{

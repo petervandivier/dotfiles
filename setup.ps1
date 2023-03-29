@@ -21,6 +21,7 @@ wsl --set-default-version 2
 # manual download from Windows Store is recommended
 # from the ubuntu docs page, it looks like the chocolatey 
 # install might even be overkill 🤔 
+# or maybe not.... https://www.saggiehaim.net/install-powershell-7-on-wsl-and-ubuntu/
 
 # https://community.chocolatey.org/packages/vagrant
 choco install vagrant --yes

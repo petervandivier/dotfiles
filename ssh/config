@@ -19,5 +19,11 @@ Host 127.1 127.0.1 127.0.0.1 localhost
 Host github.com
     Hostname github.com
     User git
-    IdentityFile ~/.ssh/github
+    IdentityFile ~/.ssh/personal.id_ed25519
+
+Host work
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/work.id_ed25519
+
 

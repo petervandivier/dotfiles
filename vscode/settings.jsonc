@@ -1,11 +1,14 @@
 {
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "all",
     "explorer.copyRelativePathSeparator": "/",
     "files.exclude": {
         "**/.git": false
     },
-    "diffEditor.ignoreTrimWhitespace": false,
+    "git.inputValidation": true,
+    "mssql.intelliSense.lowerCaseSuggestions": true,
     // https://github.com/OmniSharp/omnisharp-vscode/issues/3003
-    "omnisharp.useGlobalMono": "never"
+    "omnisharp.useGlobalMono": "never",
+    "workbench.colorTheme": "Default Dark+"
 }

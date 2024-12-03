@@ -9,7 +9,7 @@
     "editor.wordWrap": "on",
     "explorer.copyRelativePathSeparator": "/",
     "files.associations": {
-        "**/.aws/credentials": "ini"
+        "**/.aws/*": "ini" // config & creds
     },
     "files.exclude": {
         "**/.git": false

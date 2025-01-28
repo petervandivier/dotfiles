@@ -126,7 +126,7 @@ choco install azure-cli --yes
 choco install 7zip --yes
 
 # https://community.chocolatey.org/packages/greenshot
-choco install greeshot --yes
+choco install greenshot --yes
 
 # https://community.chocolatey.org/packages/postgresql
 $pw = (New-Guid).Guid -replace '-',''

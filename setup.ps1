@@ -30,6 +30,9 @@ choco install vagrant --yes
 
 Restart-Computer
 
+# https://community.chocolatey.org/packages/docker-desktop
+choco install docker-desktop --yes
+
 # https://community.chocolatey.org/packages/virtualbox
 choco install virtualbox --params "/NoDesktopShortcut" --yes
 

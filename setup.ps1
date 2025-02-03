@@ -173,6 +173,8 @@ reg import $updRegKey
 # 
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
+$PSDefaultParameterValues.Add('Install-Module:Scope', 'AllUsers')
+
 Install-Module posh-git
 Install-Module dbatools
 Install-Module PSScriptAnalyzer

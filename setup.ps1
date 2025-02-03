@@ -1,8 +1,10 @@
-#Requires -RunAs
+#Requires -RunAsAdmin
 <# 
 .LINK
     https://gist.github.com/LitKnd/93d02119cb10cef6992fd1bcddbdc73a
 #> 
+
+Set-ExecutionPolicy RemoteSigned
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
@@ -58,7 +60,7 @@ choco install crystaldiskmark --yes
 # https://community.chocolatey.org/packages/powershell-core
 choco install powershell-core --pre `
     --install-arguments='"REGISTER_MANIFEST=1 ENABLE_PSREMOTING=1"' `
-	--yes
+    --yes
 
 # https://community.chocolatey.org/packages/microsoft-windows-terminal
 choco install microsoft-windows-terminal --pre --yes

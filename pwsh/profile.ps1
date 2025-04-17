@@ -66,4 +66,6 @@ Remove-Variable (
     'Constants'
 )
 
+$PsDefaultParameterValues.Add('Invoke-Pester:Output','Detailed')
+
 . $PSScriptRoot/prompt.ps1

@@ -9,14 +9,26 @@
     "editor.wordWrap": "on",
     "explorer.copyRelativePathSeparator": "/",
     "files.associations": {
-        "**/.aws/*": "ini" // config & creds
+        // needs extension uniquevision.vscode-plpgsql-lsp
+        "*.pg.sql": "postgres",
+        "*.plpgsql": "postgres",
+        // config & creds
+        "**/.aws/*": "ini"
     },
     "files.exclude": {
         "**/.git": false
     },
     "git.inputValidation": true,
+    "mssql.autoDisableNonTSqlLanguageService": true,
     "mssql.intelliSense.lowerCaseSuggestions": true,
     // https://github.com/OmniSharp/omnisharp-vscode/issues/3003
     "omnisharp.useGlobalMono": "never",
+    "plpgsqlLanguageServer.definitionFiles": [
+        // Support glob.
+        "**/*.pg.sql",
+        "**/*.psql",
+        "**/*.pgsql",
+        "**/*.plpgsql"
+    ],
     "workbench.colorTheme": "Default Dark+"
 }

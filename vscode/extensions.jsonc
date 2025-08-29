@@ -3,6 +3,8 @@
     // for the documentation about the extensions.json format
     "recommendations": [
         "rosshamish.kuskus-kusto-syntax-highlighting",
-        "rosshamish.kuskus-kusto-language-server"
+        "rosshamish.kuskus-kusto-language-server",
+        // unstable, but works well enough
+        "uniquevision.vscode-plpgsql-lsp"
     ]
 }

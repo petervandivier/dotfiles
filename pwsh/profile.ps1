@@ -33,7 +33,7 @@ $Constants = @(
     },
     @{
         Name = 'ISODateTimeStringFormat'
-        Value = 'yyyy-MM-ddThh:mm:ss.fffzz'
+        Value = 'yyyy-MM-ddTHH:mm:ss.fffzz'
         Option = 'ReadOnly'
         Description = @(
             "I don't want to type it out every time I want a damned ISO Format Date string"

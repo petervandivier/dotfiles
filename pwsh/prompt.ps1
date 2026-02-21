@@ -76,7 +76,12 @@ function prompt {
 
     # truncate the current location if too long
     $currentDirectory = $executionContext.SessionState.Path.CurrentLocation.Path
-    if($currentDirectory.StartsWith($env:OneDrive)){$currentDirectory = $currentDirectory.Replace($env:OneDrive,'$env:OneDrive')}
+    if($currentDirectory.StartsWith($env:OneDrive)){
+        $currentDirectory = $currentDirectory.Replace(
+            $env:OneDrive,
+            "$($color.Green)`$env:OneDrive$($color.Reset)"
+        )
+    }
     if($currentDirectory.StartsWith($HOME)){$currentDirectory = $currentDirectory.Replace($HOME,'~')}
 
     $consoleWidth = [Console]::WindowWidth

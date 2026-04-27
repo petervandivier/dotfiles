@@ -12,8 +12,8 @@
         // needs extension uniquevision.vscode-plpgsql-lsp
         "*.pg.sql": "postgres",
         "*.plpgsql": "postgres",
-        // config & creds
-        "**/.aws/*": "ini"
+        "**/.aws/config": "ini", 
+        "**/.aws/credentials": "ini" 
     },
     "files.exclude": {
         "**/.git": false

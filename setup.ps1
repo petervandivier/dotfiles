@@ -133,6 +133,8 @@ choco install 7zip --yes
 # https://community.chocolatey.org/packages/greenshot
 choco install greenshot --yes
 
+# n.b. DO NOT use choco to install standalone psql/pg_* binaries
+# the distro is 2 major versions out of date as of 2026-05-12
 # https://community.chocolatey.org/packages/postgresql
 $pw = (New-Guid).Guid -replace '-',''
 choco install postgresql --yes --params "/Password:$pw"
